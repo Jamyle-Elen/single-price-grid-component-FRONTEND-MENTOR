@@ -1,13 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
 * {
     margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
 }
 
 body {
-
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(204, 43%, 93%);
 }
 
 main {
 
 }
 
+.poster {
+    width: 620px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
 
+.grid-1 {
+    padding: 35px;
+    border-radius: 10px 10px 0 0;
+}
+
+.grid-1 h1 {
+    font-size: 30px;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.grid-1 h2 {
+    font-size: 22px;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 8px;
+}
+
+.grid-1 p {
+    color: hsl(218, 22%, 67%);
+
+    line-height: 1.5;
+}
+
+.grid-1e2 {
+    display: flex;
+}
+
+.grid-2 {
+    width: 50%;
+    background-color: hsl(179, 62%, 43%);
+    padding: 35px;
+    color: hsl(204, 43%, 93%);
+    border-radius: 0 0 0 10px;
+}
+
+.grid-2 h2 {
+    font-size: 20px;
+    margin: 10px 0 20px 0;
+}
+
+.value {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.value h3 {
+    font-size: 35px;
+}
+
+.value p {
+    color: hsla(203, 44%, 93%, 0.685);
+}
+
+.grid-2 h4 {
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.grid-2 button {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 5px 15px;
+    color: hsl(204, 43%, 93%);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.grid-2 button:hover {
+    background-color: hsl(71, 56%, 53%);
+    transition: .2s;
+}
+
+.grid-3 {
+    width: 50%;
+    background-color: hsla(179, 62%, 43%, 0.70);
+    padding: 35px;
+    color: hsl(204, 43%, 93%);
+    border-radius: 0 0 10px 0;
+}
+
+.grid-3 h2 {
+    font-size: 20px;
+    margin: 10px 0 20px 0;
+}
+
+.grid-3 pre {
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+footer .attribution {
+    color: rgb(129, 128, 128);
+    margin-top: 10px;
+}
+
+footer .attribution a {
+    color: hsl(71, 46%, 45%);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer .attribution a:hover {
+    color: hsla(179, 62%, 43%, 0.70);
+    transition: .2s;
+}
+
+@media screen and (max-width: 700px) {
+    .poster {
+        width: 300px;
+    }
+
+    .grid-1 h1 {
+        font-size: 20px;
+    }
+
+    .grid-1 h2 {
+        font-size: 15px;
+    }
+
+    .grid-1 p {
+        font-size: 12px;
+    }
+
+    .grid-1e2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-2 {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .grid-2 h2 {
+        font-size: 15px;
+    }
+
+    .value h3 {
+        font-size: 27px;
+    }
+
+    .value p {
+        font-size: 12px;
+    }
+
+    .grid-2 h4 {
+        font-size: 13px;
+    }
+
+    .grid-2 button {
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .grid-3 {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .grid-3 h2 {
+        font-size: 15px;
+    }
+
+    .grid-3 pre {
+        font-size: 13px;
+    }
+
+    footer .attribution {
+        font-size: 12px;
+    }
+}
